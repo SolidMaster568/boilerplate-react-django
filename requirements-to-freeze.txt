@@ -27,3 +27,4 @@ model-mommy
 pre-commit
 isort
 safety
+pycycle

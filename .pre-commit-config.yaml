@@ -23,3 +23,9 @@
     language: system
     always_run: true
     files: \$
+  - id: pycycle
+    name: pycycle-local
+    entry: pycycle --here --ignore=node_modules --verbose
+    language: system
+    always_run: true
+    files: \$

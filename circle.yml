@@ -10,6 +10,8 @@ test:
     - npm run build
     # style check
     - flake8
+    # pycycle check circular imports
+    - pycycle --here --ignore=node_modules --verbose
     # safety check
     - cat requirements.txt | safety check --stdin
     # imports check
