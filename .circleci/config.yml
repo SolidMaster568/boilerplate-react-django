@@ -130,7 +130,10 @@ jobs:
             git add .circleci/config.yml
             git rm proj_circle.yml
       - run:
-          command: git commit -m "Replacing circle.yml" --author "Vinta Software <contact@vinta.com.br>"
+          name: Remove docs folder
+          command: git rm -r docs
+      - run:
+          command: git commit -m "Replace circle.yml, remove docs folder" --author "Vinta Software <contact@vinta.com.br>"
           environment:
             GIT_COMMITTER_NAME: "Vinta Software"
             GIT_COMMITTER_EMAIL: "contact@vinta.com.br"

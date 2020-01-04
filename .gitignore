@@ -22,7 +22,7 @@ __pycache__/
 node_modules/
 npm-debug.log
 
-#Folders
+# Folders
 .DS_Store
 
 # Webpack
@@ -45,5 +45,8 @@ npm-debug.log
 spritesmith-generated/
 spritesmith.scss
 
-# templated email
+# Templated email
 tmp_email/
+
+# Sphinx
+docs/_build
