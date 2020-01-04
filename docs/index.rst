@@ -6,7 +6,11 @@
 Django React Boilerplate
 ====================================================
 
+Hello world
+
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
+   deployment
+   tools
+   contributing
