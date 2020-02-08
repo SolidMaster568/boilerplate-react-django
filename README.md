@@ -36,8 +36,7 @@ In the next steps, always remember to replace theprojectname with your project's
 - [ ] Make sure the virtualenv is activated `workon theprojectname` or `source theprojectname/bin/activate`
 - [ ] Install pip-tools if not installed yet: `pip install pip-tools` (maybe you'll have to run this command as an OS superuser).
 - [ ] Make sure you have Python 3.7 installed.
-- [ ] Compile the requirements before installation: `pip-compile requirements.in > requirements.txt && pip-compile dev-requirements.in > dev-requirements.txt`
-- [ ] `pip install -r requirements.txt && pip install -r dev-requirements.txt`
+- [ ] Compile the requirements before installation and install them:  `make compile_install_requirements`
 - [ ] Change the first line of README to the name of the project.
 - [ ] Add an email address to the `ADMINS` settings variable in `{{project_name}}/{{project_name}}/settings/base.py`
 - [ ] Change the `SERVER_EMAIL` to the email address used to send e-mails in `{{project_name}}/{{project_name}}/settings/production.py`
@@ -100,9 +99,12 @@ Add the libname to either requirements.in or dev-requirents.in, then either upgr
 `pip-compile requirements.in > requirements.txt` or `make upgrade`
 `pip install -r requirements.txt`
 
+### Cleaning example code
+Before start creating your own apps, run the command `make clean_examples` in order to clean up the example apps from the front and backend.
+
 ## Deployment 
 ### Setup
-This project comes with a `app.json` file for heroku, that can be used to create an app on heroku from a GitHub repository.
+This project comes with an `app.json` file, which can be used to create an app on Heroku from a GitHub repository.
 
 After setting up the project, you can init a repository and push it on GitHub. If your repository is public, you can use the following button:
 

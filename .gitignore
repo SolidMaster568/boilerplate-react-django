@@ -1,5 +1,6 @@
+# General
 *.pyc
-/db.sqlite3
+db.sqlite3
 .DS_Store
 .env
 */settings/local.py
@@ -7,6 +8,11 @@
 /mediafiles/*
 __pycache__/
 /.vscode/
+/venv/
+/env/
+/output/
+/cache/
+boilerplate.zip
 
 # coverage result
 .coverage
@@ -32,12 +38,6 @@ npm-debug.log
 .sass-cache
 *.map
 
-# General
-/venv/
-/env/
-/output/
-/cache/
-
 # Spritesmith
 spritesmith-generated/
 spritesmith.scss
@@ -47,3 +47,6 @@ tmp_email/
 
 # Sphinx
 docs/_build
+
+# requirements
+*requirements.txt
