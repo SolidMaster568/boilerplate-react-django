@@ -1,6 +1,9 @@
+License
+=======
+
 MIT License
 
-Copyright (c) 2017 Vinta Serviços e Soluções Tecnológicas Ltda
+Copyright (c) 2020 Vinta Serviços e Soluções Tecnológicas Ltda
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
